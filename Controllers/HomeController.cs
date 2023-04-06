@@ -63,11 +63,12 @@ namespace RssExample.Controllers
                             rssContent.Append("<div style = 'background: white'><a href='" + link + "'>" + title + "</a><br>" + description + "<br><p></div>");
 
                         }
-                   
+                    }
                     ViewData["strArticle"] = rssContent.ToString(); 
                     return View(ViewData["strArticle"]);
                 }
             }
+            
             catch (ArgumentNullException)
             {
                 errorString = "No url for Rss feed specified.";
