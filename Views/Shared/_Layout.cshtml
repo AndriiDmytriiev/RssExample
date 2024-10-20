@@ -3,27 +3,1323 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+   
     <title>@ViewData["Title"] - RssExample</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+  
     <link rel="stylesheet" href="~/css/site.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RssExample</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
+    <table align="left">
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                   
+                </td>
+                <td>
+                   
+                </td>
+    <td>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark btn-sm ms-3"
+                type="button"
+                id="MyAccountDDM"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false" color="blau">
+            RSS by Subject
+        </button>
+                    
+                        <div class="dropdown-menu" aria-labelledby="rssDropdown">
+                            <a class="dropdown-item" href="/Home/Index?feedId=0">
+                                Advisory
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=1">
+                                Analyst Recommendations
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=2">
+                                Annual Meetings & Shareholder Rights
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=3">
+                                Annual Report
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=4">
+                                Arts & Entertainment
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=5">
+                                Bankruptcy
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=6">
+                                Bond Market News
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=7">
+                                Bonds Market Information
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=8">
+                                Business Contracts
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=9">
+                                Calendar Of Events
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=10">
+                                Changes In Company's Own Shares
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=11">
+                                Changes In Share Capital And Votes
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=12">
+                                Changes To Observation Segment
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=13">
+                                Class Action
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=14">
+                                Clinical Study
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=15">
+                                Company Announcement
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=16">
+                                Company Regulatory Filings
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=17">
+                                Conference Calls/ Webcasts
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=18">
+                                Contests/Awards
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=19">
+                                Corporate Action
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=20">
+                                Derivative Market Information
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=21">
+                                Directors And Officers
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=22">
+                                Dividend Reports And Estimates
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=23">
+                                Earnings Releases And Operating Results
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=24">
+                                Economic Research And Reports
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=25">
+                                Environmental, Social, And Governance Criteria
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=26">
+                                Equity Market Information
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=27">
+                                European Regulatory News
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=28">
+                                Exchange Announcement
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=29">
+                                Exchange Members
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=30">
+                                Exchange News
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=31">
+                                Fashion
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=32">
+                                Feature Article
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=33">
+                                Financing Agreements
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=34">
+                                First North Announcement
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=35">
+                                First North Information
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=36">
+                                Food
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=37">
+                                Government News
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=38">
+                                Health
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=39">
+                                Initial Public Offerings
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=40">
+                                Insider's Buy/Sell
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=41">
+                                Interim Information
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=42">
+                                Investment Fund Information
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=43">
+                                Investment Opinion
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=44">
+                                Joint Venture
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=45">
+                                Law & Legal Issues
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=46">
+                                Licensing Agreements
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=47">
+                                Lifestyle
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=48">
+                                Major Shareholder Announcements
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=49">
+                                Management Changes
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=50">
+                                Management Statements
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=51">
+                                Market Research Reports
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=52">
+                                Mergers And Acquisitions
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=53">
+                                Mutual Fund Information
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=54">
+                                Net Asset Value
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=55">
+                                Other News
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=56">
+                                Partnerships
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=57">
+                                Patents
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=58">
+                                Philanthropy
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=59">
+                                Politics
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=60">
+                                Pre-Release Comments
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=61">
+                                Press Releases
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=62">
+                                Product / Services Announcement
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=63">
+                                Prospectus/Announcement Of Prospectus
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=64">
+                                Proxy Statements And Analysis
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=65">
+                                Regulatory Information
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=66">
+                                Religion
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=67">
+                                Research Analysis And Reports
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=68">
+                                Restructuring / Recapitalization
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=69">
+                                Sports
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=70">
+                                Stock Market News
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=71">
+                                Tax Issues/Accounting
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=72">
+                                Technical Analysis
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=73">
+                                Trade Show
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=74">
+                                Trading Information
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=75">
+                                Travel
+
+                            </a>
+                            <a class="dropdown-item" href="/Home/Index?feedId=76">
+                                Warrants And Certificates
+
+                            </a>
+                            
+                        </div>
+                    
+                  
                         
+    </td>
+            <td>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark btn-sm ms-3"
+                type="button"
+                id="MyAccountDDM"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false">
+            Rss by Industry
+        </button>
+
+        <ul class="dropdown-menu" aria-labelledby="MyAccountDDM" id="AppDropDownId">
+           
+            <li>
+                <div class="btn-group dropend">
+                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Basic Materials
+                    </a>
+                    <ul class="dropdown-menu">
+                                        <a class="dropdown-item" href="/Home/Index?feedId=77">
+                                            Basic Materials
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=78">
+                                            Aluminum
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=79">
+                                            Chemicals and Synthetic Fibers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=80">
+                                            Chemicals: Diversified
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=81">
+                                            Commodity Chemicals
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=82">
+                                            Copper
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=83">
+                                            Diamonds & Gemstones
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=84">
+                                            Diversified Materials
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=85">
+                                            Fertilizers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=86">
+                                            Forestry
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=87">
+                                            General Mining
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=88">
+                                            Gold Mining
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=89">
+                                            Iron & Steel
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=90">
+                                            Metal Fabricating
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=91">
+                                            Nonferrous Metals
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=92">
+                                            Paper
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=93">
+                                            Platinum & Precious Metals
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=94">
+                                            Specialty Chemicals
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=95">
+                                            Textile Products
+
+                                        </a>
+
+                                        
                     </ul>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </li>
+                    
+            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <div class="btn-group dropend">
+                                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Consumer Goods
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                         <a class="dropdown-item" href="/Home/Index?feedId=96">
+                                            Consumer Goods
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=97">
+                                            Auto Parts
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=98">
+                                            Auto Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=99">
+                                            Automobiles
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=100">
+                                            Brewers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=101">
+                                            Clothing & Accessories
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=102">
+                                            Consumer Electronics
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=103">
+                                            Distillers & Vintners
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=104">
+                                            Durable Household Products
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=105">
+                                            Farming & Fishing
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=106">
+                                            Food Products
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=107">
+                                            Footwear
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=108">
+                                            Furnishings
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=109">
+                                            Home Construction
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=110">
+                                            Nondurable Household Products
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=111">
+                                            Personal Products
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=112">
+                                            Recreational Products
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=113">
+                                            Soft Drinks
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=114">
+                                            Tires
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=115">
+                                            Tobacco
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=116">
+                                            Toys
+
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </li>
+             <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <div class="btn-group dropend">
+                                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Consumer Services
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <a class="dropdown-item" href="/Home/Index?feedId=117">
+                                            Consumer Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=118">
+                                            Airlines
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=119">
+                                            Apparel Retailers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=120">
+                                            Broadcasting & Entertainment
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=121">
+                                            Broadline Retailers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=122">
+                                            Drug Retailers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=123">
+                                            Food Retailers & Wholesalers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=124">
+                                            Gambling
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=125">
+                                            Home Improvement Retailers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=126">
+                                            Hotels
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=127">
+                                            Media Agencies
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=128">
+                                            Publishing
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=129">
+                                            Recreational Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=130">
+                                            Restaurants & Bars
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=131">
+                                            Specialized Consumer Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=132">
+                                            Specialty Retailers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=133">
+                                            Travel & Tourism
+
+                                        </a>
+                                        
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <div class="btn-group dropend">
+                                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Energy
+                                    </a>
+                          
+                                    
+                                    <ul class="dropdown-menu">
+                                        <a class="dropdown-item" href="/Home/Index?feedId=134">
+                                            Energy
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=135">
+                                            Alternative Fuels
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=136">
+                                            Coal
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=137">
+                                            Exploration & Production
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=138">
+                                            Integrated Oil & Gas
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=139">
+                                            Oil Equipment & Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=140">
+                                            Pipelines
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=141">
+                                            Renewable Energy Equipment
+
+                                        </a>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <div class="btn-group dropend">
+                                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Financials
+                                    </a>
+                                    
+                                    <ul class="dropdown-menu">
+                                        <a class="dropdown-item" href="/Home/Index?feedId=142">
+                                            Financials
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=143">
+                                            Asset Managers & Custodians
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=144">
+                                            Banks
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=145">
+                                            Closed End Investments
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=146">
+                                            Consumer Finance
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=147">
+                                            Diversified Financial Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=148">
+                                            Equity Investment Instruments
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=149">
+                                            Financial Data Providers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=150">
+                                            Full Line Insurance
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=151">
+                                            Insurance Brokers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=152">
+                                            Investment Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=153">
+                                            Life Insurance
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=154">
+                                            Mortgage Finance
+
+                                        </a>
+                                         <a class="dropdown-item" href="/Home/Index?feedId=155">
+                                            Nonequity Investment Instruments
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=156">
+                                            Open End and Miscellaneous Investment Vehicles
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=157">
+                                            Property & Casualty Insurance
+
+                                        </a>
+                                         <a class="dropdown-item" href="/Home/Index?feedId=158">
+                                            Reinsurance
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=159">
+                                            Specialty Finance
+
+                                        </a>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <div class="btn-group dropend">
+                                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Health Care
+                                    </a>
+                                   
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <ul class="dropdown-menu">
+                                        <a class="dropdown-item" href="/Home/Index?feedId=160">
+                                            Health Care
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=161">
+                                            Biotechnology
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=162">
+                                            Cannabis Producers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=163">
+                                            Health Care Providers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=164">
+                                            Medical Equipment
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=165">
+                                            Medical Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=166">
+                                            Medical Supplies
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=167">
+                                            Pharmaceuticals
+
+                                        </a>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <div class="btn-group dropend">
+                                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Industrials
+                                    </a>
+                                    
+                                    
+                                    
+                                    <ul class="dropdown-menu">
+                                        <a class="dropdown-item" href="/Home/Index?feedId=125">
+                                            Industrials
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=126">
+                                            Aerospace
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=127">
+                                            Building Materials & Fixtures
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=128">
+                                            Building Materials: Other
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=129">
+                                            Building, Roofing/Wallboard and Plumbing
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=130">
+                                            Building: Climate Control
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=131">
+                                            Business Support Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=132">
+                                            Business Training & Employment Agencies
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=133">
+                                            Business Training and Employment Agencies
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=125">
+                                            Cement
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=126">
+                                            Commercial Vehicle-Equipment Leasing
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=127">
+                                            Commercial Vehicles & Trucks
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=128">
+                                            Commercial Vehicles and Parts
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=129">
+                                            Construction
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=130">
+                                            Containers & Packaging
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=131">
+                                            Defense
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=132">
+                                            Delivery Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=133">
+                                            Diversified Industrials
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=125">
+                                            Electrical Components
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=126">
+                                            Electrical Components & Equipment
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=127">
+                                            Electronic Equipment
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=128">
+                                            Electronic Equipment: Control and Filter
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=129">
+                                            Electronic Equipment: Gauges and Meters
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=130">
+                                            Electronic Equipment: Other
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=131">
+                                            Electronic Equipment: Pollution Control
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=132">
+                                            Engineering and Contracting Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=133">
+                                            Financial Administration
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=125">
+                                            Forms and Bulk Printing Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=126">
+                                            Glass
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=127">
+                                            Heavy Construction
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=128">
+                                            Industrial Machinery
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=129">
+                                            Industrial Suppliers
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=130">
+                                            Machinery: Agricultural
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=131">
+                                            Machinery: Construction and Handling
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=132">
+                                            Machinery: Engines
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=133">
+                                            Machinery: Industrial
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=125">
+                                            Machinery: Specialty
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=126">
+                                            Machinery: Tools
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=127">
+                                            Marine Transportation
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=128">
+                                            Paints and Coatings
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=129">
+                                            Plastics
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=130">
+                                            Professional Business Support Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=131">
+                                            Railroad Equipment
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=132">
+                                            Railroads
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=133">
+                                            Security Services
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=125">
+                                            Transaction Processing Services
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=126">
+                                           
+                                            Transportation Services
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=127">
+                                            
+                                            Trucking
+                                           
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=128">
+                                            
+                                            Waste & Disposal Services
+
+                                        </a>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                             <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <div class="btn-group dropend">
+                                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Real Estate
+                                    </a>
+                                    <ul class="dropdown-menu">
+
+                                        <a class="dropdown-item" href="/Home/Index?feedId=168">
+                                            Real Estate
+                                           
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=169">
+                                           
+                                            Diversified REITs
+                                            
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=170">
+                                            Health Care REITs
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=171">
+
+                                            Hotel & Lodging REITs
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=172">
+                                            Industrial & Office REITs
+
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=173">
+                                            Industrial REITs
+
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=174">
+                                            Infrastructure REITs
+
+                                           
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=175">
+                                            Mortgage REITs
+
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=176">
+                                            Office REITs
+
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=177">
+                                            Other Specialty REITs
+
+                                           
+
+
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=178">
+                                            Real Estate Holding & Development
+
+                                           
+
+
+
+                                        </a>
+                                         <a class="dropdown-item" href="/Home/Index?feedId=179">
+
+                                            Real Estate Holding and Development
+
+                                            
+
+
+                                        </a>
+                                         <a class="dropdown-item" href="/Home/Index?feedId=180">
+                                            Real Estate Services
+
+                                           
+
+
+
+                                        </a>
+                                         <a class="dropdown-item" href="/Home/Index?feedId=181">
+                                            Residential REITs
+
+                                            
+
+
+
+                                        </a>
+                                         <a class="dropdown-item" href="/Home/Index?feedId=182">
+
+                                            Retail REITs
+
+                                           
+
+
+                                        </a>
+                                         <a class="dropdown-item" href="/Home/Index?feedId=183">
+                                            Specialty REITs
+
+                                            
+
+
+
+                                        </a>
+                                         <a class="dropdown-item" href="/Home/Index?feedId=184">
+
+                                            Storage REITs
+
+                                           
+
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=185">
+                                            Timber REITs
+
+
+
+                                        </a>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                             
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <div class="btn-group dropend">
+                                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Technology
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <a class="dropdown-item" href="/Home/Index?feedId=186">
+                                            Technology
+                                            
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=187">
+                                            Computer Hardware
+
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=188">
+                                            Computer Services
+
+                                           
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=189">
+                                            Electronic Office Equipment
+
+                                           
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=190">
+                                            Internet
+
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=191">
+                                            Production Technology Equipment
+
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=192">
+                                            Semiconductors
+
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=193">
+                                            Software
+
+                                           
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=194">
+                                            Telecommunications Equipment
+
+                                        </a>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <div class="btn-group dropend">
+                                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Telecommunications
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <a class="dropdown-item" href="/Home/Index?feedId=195">
+                                            Telecommunications
+                                            
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=196">
+
+                                            Fixed Line Telecommunications
+
+                                            
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=197">
+                                            Mobile Telecommunications
+
+                                        </a>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <div class="btn-group dropend">
+                                    <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        Utilities
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <a class="dropdown-item" href="/Home/Index?feedId=198">
+                                            Utilities
+                                            
+                                            
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=199">
+                                            Alternative Electricity
+
+                                            
+
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=200">
+                                            Conventional Electricity
+
+                                           
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=201">
+                                            Gas Distribution
+
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=202">
+                                            Multiutilities
+
+                                            
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=203">
+
+
+                                        </a>
+                                        <a class="dropdown-item" href="/Home/Index?feedId=204">
+                                            Water
+
+                                        </a>
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+
+        </ul>
+    </div>
+    </td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td></tr>
+    </table>
+        </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -32,12 +1328,12 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - RssExample (developped by Andrii Dmytriiev)
+            &copy; 2024 - RssExample (developed by Andrii Dmytriiev)
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

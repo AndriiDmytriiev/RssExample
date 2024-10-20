@@ -1,14 +1,60 @@
-﻿
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>RSS Feeds Example</title>
+    <style>
+        /* Add some styling for the top menu */
+        nav {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
 
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
 
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
 
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
 
-<div class='RssContent'>
+        /* Style for the title */
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
+        /* Style for RSS content */
+        .rss-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top menu with RSS links located where "RssExample" title is -->
+    
+
+    <!-- Navigation menu for RSS links -->
    
-   
-    @Html.Raw(ViewData["strArticle"])
-   
 
-</div>
+    <!-- Display the RSS feed content -->
+    <div class="rss-content">
+        @Html.Raw(ViewData["strArticle"])
+    </div>
+</body>
+</html>
